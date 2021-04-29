@@ -50,6 +50,7 @@ jobs:
         DJANGO_SETTINGS_MODULE: yatube.settings
         DEBUG: 1
         ALLOWED_HOSTS: "*"
+        PYTHONPATH: yatube/
       run: |
         python yatube/manage.py makemigrations && python yatube/manage.py migrate
         py.test
