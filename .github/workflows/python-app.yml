@@ -31,6 +31,7 @@ jobs:
         path: src/
     - name: Lint with flake8 author
       run: |
+        rm src/tests
         mv src/yatube ./
         tree
         # stop the build if there are Python syntax errors or undefined names
